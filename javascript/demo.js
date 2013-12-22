@@ -35,5 +35,15 @@ $(document).ready(function() {
 			$('.navigation a:last').parent('li').addClass('selected-nav');
 		}
 	});
-	
+
+	$(function() {
+		var pull 				= $('#pull');
+				menu 				= $('.navigation');
+				menuHeight	= menu.height();
+
+		$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+	});
 });
