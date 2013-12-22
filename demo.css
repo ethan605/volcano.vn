@@ -333,6 +333,6 @@ body {
   .navigation li {
     display: block;
     float: none;
-    width: 50%;
+    width: 100%;
   }
 }
