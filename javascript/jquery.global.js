@@ -13,8 +13,7 @@ jQuery(document).ready(function($) {
 		var sec = $("section");
 		var width = $(window).width(); // lấy giá trị ngang màng hình hiện tại
 		var height = $(window).height();// lấy giá trị dọc màng hình hiện tại
-
-		$("body").css('width', width*2); // gán thuộc tính ngang cho màng hình
+		
 		sec.css({'width': width,'height':height}); // lấy giá dọc và ngang cho section
 	}
 	// 
