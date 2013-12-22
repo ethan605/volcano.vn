@@ -70,9 +70,13 @@ body {
   font-size: 15px;
 }
 
-  #whatwedo, #whoweare, #ourwork, #contactus {
+  #content-wrapper .section {
     display: block;
-    padding-top: 90px
+    padding-top: 90px;
+  }
+
+  #content-wrapper .section img {
+    width: 70%;
   }
   
     .preface {
@@ -163,7 +167,6 @@ body {
       .navigation li a {
         position: relative;
         z-index: 1;
-        color: #444;
         text-decoration: none;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -282,35 +285,30 @@ body {
         }
 
 @media screen and (max-width: 720px) {
+  #content-wrapper .section img {
+    width: 100%;
+  }
+
   .navigation { 
     height: auto;
     width: 100%;
   }
 }
 
-/*@media only screen and (max-width : 480px) {
-  a#pull {
-    display: block;
-    background-color: #283744;
-    width: 100%;
-    position: relative;
-  }
-  a#pull:after {
-    content:"";
-    background: url('nav-icon.png') no-repeat;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-  }
-}*/
-
 @media only screen and (max-width : 480px) {
   .navigation {
     display: none;
     height: auto;
+    background-color: #283744;
+  }
+  .navigation li {
+    display: block;
+    float: none;
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+  .navigation li a {
+    color: white;
   }
   a#pull {
     display: block;
@@ -321,18 +319,12 @@ body {
   }
   a#pull:after {
     content:"";
-    background: url('nav-icon.png') no-repeat;
+    background: url('images/nav-icon.png') no-repeat;
     width: 30px;
-    height: 30px;
+    height: 100%;
     display: inline-block;
     position: absolute;
     right: 15px;
-    top: 10px;
-  }
-
-  .navigation li {
-    display: block;
-    float: none;
-    width: 100%;
+    top: 30%;
   }
 }
