@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 
 body {
   size: 100%;
@@ -72,13 +72,51 @@ body {
 
   #content-wrapper .section {
     display: block;
-    padding-top: 90px;
+    padding-top: 40px;
   }
 
   #content-wrapper .section img {
-    width: 70%;
+    width: 60%;
   }
   
+  #content-wrapper #whatwedo  img:nth-child(2),#content-wrapper .section  img:nth-child(3) {display: none;}
+  
+  #content-wrapper #whatwedo .technology  {
+    margin-top: 0px;
+    left: 0px;
+   
+  }
+    
+  #content-wrapper #whatwedo .technology .app img {
+    width : 15%;
+    left : 350px;
+    top : 610px;
+  }
+  
+   #content-wrapper #whatwedo .technology .web img {
+    width : 15%;
+    left : 570px;
+    top : 610px;
+  }
+  
+   #content-wrapper #whatwedo .technology .design img {
+    width : 15%;
+    left : 800px;
+    top : 610px;
+  }
+  
+   #content-wrapper #whoweare .member .nghia img:nth-child(2){
+   width : 5%;
+   left : 350px;
+   top : 900px;
+   }
+   
+   #content-wrapper #whoweare .member .nghia img:nth-child(1) {
+   width : 5%;
+   left : 350px;
+   top : 850px;
+   }
+   
     .preface {
       margin: 0;
       font-size: 40px;
@@ -132,7 +170,7 @@ body {
     list-style-type: none;
     vertical-align: top;
     padding: 0;
-    width: 50%;
+    width: 60%;
   }
 
     .navigation a {
@@ -143,11 +181,14 @@ body {
       text-decoration: none;
       text-shadow: 1px 1px 0px #283744;
     }
-  
+    .navigation li img {
+     width : 35%;
+     margin-top: -18px;
+    }
     .navigation li {
       display: inline;
       float: left;
-      width: 25%;
+      width: 20%;
       height: 16px;
       padding: 22px 0;
       text-align: center;
