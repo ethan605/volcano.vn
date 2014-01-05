@@ -1,11 +1,15 @@
 
-
+html {
+	width: 1400px;
+	
+}
 body {
-  size: 100%;
-  margin: 0;
+  size : 100%;
+  margin: 0 auto;
   background: #373737;
   text-align: center;
   font-family: "Open Sans";
+  width: 1400px;
 }
 
 .demo-menu {
@@ -47,7 +51,7 @@ body {
 #header-wrapper {
   display: block;
   position: fixed;
-  width: 100%;
+  width: 1400px;
   height: 60px;
   color: #373737;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#373737), to(#cbcbcb));
@@ -63,7 +67,7 @@ body {
 #content-wrapper {
   display: block;
   padding-top: 5em;
-  width: 960px;
+  width: 1400px;
   color: #414141;
   line-height: 2em;
   text-shadow: #fff 1px 1px 0px;
@@ -76,45 +80,125 @@ body {
   }
 
   #content-wrapper .section img {
-    width: 60%;
+    width: 720px;
+    height : 590px;
   }
-  
+  #content-wrapper #whoweare img {
+    width: 720px;
+    height : 400px;
+  }
   #content-wrapper #whatwedo  img:nth-child(2),#content-wrapper .section  img:nth-child(3) {display: none;}
   
   #content-wrapper #whatwedo .technology  {
-    margin-top: 0px;
-    left: 0px;
+    margin-top: -125px;
+    margin-left: 0px;
    
   }
     
   #content-wrapper #whatwedo .technology .app img {
-    width : 15%;
-    left : 350px;
-    top : 610px;
+    width : 12%;
+    height : 40%;
+    left : 420px;
+    top : 5px;
   }
   
    #content-wrapper #whatwedo .technology .web img {
-    width : 15%;
-    left : 570px;
-    top : 610px;
+    width : 12%;
+    height : 40%;
+    left : 620px;
+    top : 5px;
   }
   
    #content-wrapper #whatwedo .technology .design img {
-    width : 15%;
-    left : 800px;
-    top : 610px;
+    width : 12%;
+    height : 40%;
+    left : 820px;
+    top : 5px;
   }
   
+   #content-wrapper #whoweare img {
+   margin-top: 50px;
+   }
+  
+   #content-wrapper #whoweare .member {
+    margin-top: -450px;
+    margin-left: 0px;
+   }
+   
    #content-wrapper #whoweare .member .nghia img:nth-child(2){
    width : 5%;
+   height : 10%;
    left : 350px;
-   top : 900px;
+   top : 90px;
    }
    
    #content-wrapper #whoweare .member .nghia img:nth-child(1) {
    width : 5%;
+   height : 10%;
    left : 350px;
-   top : 850px;
+   top : 30px;
+   }
+   
+   #content-wrapper #whoweare .member .dang img:nth-child(2){
+   width : 5%;
+   height : 10%;
+   left : 450px;
+   top : 90px;
+   }
+   
+   #content-wrapper #whoweare .member .dang img:nth-child(1) {
+   width : 5%;
+   height : 10%;
+   left : 450px;
+   top : 30px;
+   }
+   
+   #content-wrapper #contactus .contact{
+    margin-top: -500px;
+   }
+   
+   #content-wrapper #contactus .contact .icon_info img{
+    width : 5%;
+    height : 10%;
+   }
+   
+   #content-wrapper #contactus .contact .info img:nth-child(1) {
+   width : 5%;
+   height : 10%;
+   left : 550px;
+   top : 0px;
+   }
+   
+   #content-wrapper #contactus .contact .info img:nth-child(2) {
+   width : 5%;
+   height : 10%;
+   left : 780px;
+   top : 0px;
+   }
+   
+   #content-wrapper #contactus .contact .messagesentry {
+   left : 400px;
+   top : 100px;
+   }
+   
+   #content-wrapper #contactus .contact .username {
+   left : 850px;
+   top : 100px;
+   }
+   
+   #content-wrapper #contactus .contact .emailaddress {
+   left : 850px;
+   top : 150px;
+   }
+   
+   #content-wrapper #contactus .contact .send{
+    left : 860px;
+    top : 200px;
+   }
+   
+   #content-wrapper #contactus .contact .send img{
+    width : 100%;
+    height : 100%;
    }
    
     .preface {

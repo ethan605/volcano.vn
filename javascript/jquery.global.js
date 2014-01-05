@@ -11,18 +11,18 @@ jQuery(document).ready(function($) {
 	// width & height
 	function wah(){
 		var sec = $("section");
-		var width = $(window).width(); // lấy giá trị ngang màng hình hiện tại
-		var height = $(window).height();// lấy giá trị dọc màng hình hiện tại
+		var width = $(window).width(); // láº¥y giÃ¡ trá»‹ ngang mÃ ng hÃ¬nh hiá»‡n táº¡i
+		var height = $(window).height();// láº¥y giÃ¡ trá»‹ dá»�c mÃ ng hÃ¬nh hiá»‡n táº¡i
 		
-		sec.css({'width': width,'height':height}); // lấy giá dọc và ngang cho section
+		sec.css({'width': "820px",'height':height}); // láº¥y giÃ¡ dá»�c vÃ  ngang cho section
 	}
 	// 
 	
 	
-	wah(); // Gọi chạy function width và height
+	wah(); // Gá»�i cháº¡y function width vÃ  height
 
-	// Thay đổi width & height khi thay đổi màng hình
+	// Thay Ä‘á»•i width & height khi thay Ä‘á»•i mÃ ng hÃ¬nh
 	$(window).resize(function(){
-		wah(); // Gọi chạy function width và height
+		wah(); // Gá»�i cháº¡y function width vÃ  height
 	})
 });
