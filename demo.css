@@ -1,15 +1,9 @@
-
-html {
-	width: 1400px;
-	
-}
 body {
   size : 100%;
   margin: 0 auto;
   background: #373737;
   text-align: center;
   font-family: "Open Sans";
-  width: 1400px;
 }
 
 .demo-menu {
@@ -51,23 +45,14 @@ body {
 #header-wrapper {
   display: block;
   position: fixed;
-  width: 1400px;
-  height: 60px;
-  color: #373737;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#373737), to(#cbcbcb));
-  background-image: -webkit-linear-gradient(top, #373737, #cbcbcb);
-  background-image:    -moz-linear-gradient(top, #373737, #cbcbcb); 
-  background-image:     -ms-linear-gradient(top, #373737, #cbcbcb); 
-  background-image:      -o-linear-gradient(top, #373737, #cbcbcb); 
-  background-image:         linear-gradient(to bottom, #373737, #cbcbcb);
-  box-shadow: rgba(214,214,214,0.6) 0px 6px 0px;
-  color: #444;
+  width: 100%;
+  height: 100px;
+  background-color: #373737;
 }
 
 #content-wrapper {
   display: block;
   padding-top: 5em;
-  width: 1400px;
   color: #414141;
   line-height: 2em;
   text-shadow: #fff 1px 1px 0px;
@@ -79,41 +64,33 @@ body {
     padding-top: 40px;
   }
 
-  #content-wrapper .section img {
-    width: 720px;
-    height : 590px;
+  #content-wrapper #whatwedo > img {
+    display: none;
   }
-  #content-wrapper #whoweare img {
-    width: 720px;
-    height : 400px;
+
+  #content-wrapper #whatwedo > img:nth-child(1) {
+    display: inline;
   }
-  #content-wrapper #whatwedo  img:nth-child(2),#content-wrapper .section  img:nth-child(3) {display: none;}
   
   #content-wrapper #whatwedo .technology  {
-    margin-top: -125px;
+    margin-top: -141px;
     margin-left: 0px;
-   
+  }
+
+  #content-wrapper #whatwedo .technology div {
+    display: inline-block;
+    width: 30%;
   }
     
   #content-wrapper #whatwedo .technology .app img {
-    width : 12%;
-    height : 40%;
-    left : 420px;
-    top : 5px;
+    margin-right: -72%;
   }
   
-   #content-wrapper #whatwedo .technology .web img {
-    width : 12%;
-    height : 40%;
-    left : 620px;
-    top : 5px;
+  #content-wrapper #whatwedo .technology .web img {
   }
   
-   #content-wrapper #whatwedo .technology .design img {
-    width : 12%;
-    height : 40%;
-    left : 820px;
-    top : 5px;
+  #content-wrapper #whatwedo .technology .design img {
+    margin-left : -72%;
   }
   
    #content-wrapper #whoweare img {
@@ -262,31 +239,33 @@ body {
       display: inline-block;
       width: 100%;
       text-align: center;
-      text-decoration: none;
       text-shadow: 1px 1px 0px #283744;
+      font-family: DiavloMedium;
+      font-size: 20px;
     }
-    .navigation li img {
-     width : 35%;
-     margin-top: -18px;
+    
+    .navigation li.logo img {
+     width: 80px;
+     height: auto;
+     margin-top: -20px;
     }
+
     .navigation li {
       display: inline;
       float: left;
       width: 20%;
-      height: 16px;
-      padding: 22px 0;
+      padding: 32px 0;
+      height: 36px;
       text-align: center;
       cursor: pointer;
     }
-      
+
     .navigation li:hover, .selected-nav {
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#7bbbf7), to(#338cdf));
-      background-image: -webkit-linear-gradient(top, #7bbbf7, #338cdf);
-      background-image:    -moz-linear-gradient(top, #7bbbf7, #338cdf); 
-      background-image:     -ms-linear-gradient(top, #7bbbf7, #338cdf); 
-      background-image:      -o-linear-gradient(top, #7bbbf7, #338cdf); 
-      background-image:         linear-gradient(to bottom, #7bbbf7, #338cdf);
-      border-bottom: 6px solid #1f6db6;
+      background-color: #444;
+    }
+
+    .navigation li.logo:hover {
+      background-color: rgba(0, 0, 0, 0);
     }
       
       .navigation li a {
@@ -299,7 +278,6 @@ body {
       }
 
       .navigation li:hover a, .selected-nav a, .selected-nav2 a, .top a {
-        color: #fff !important;
         text-shadow: #335f87 1px 1px 0px;
       }
     
@@ -409,7 +387,7 @@ body {
                         translateZ(30px);
         }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
   #content-wrapper .section img {
     width: 100%;
   }
@@ -452,4 +430,29 @@ body {
     right: 15px;
     top: 30%;
   }
+}
+
+@font-face {
+  font-family: DiavloBlack;
+  src: url('fonts/DiavloBlack.otf');
+}
+
+@font-face {
+  font-family: DiavloBold;
+  src: url('fonts/DiavloBold.otf');
+}
+
+@font-face {
+  font-family: DiavloBook;
+  src: url('fonts/DiavloBook.otf');
+}
+
+@font-face {
+  font-family: DiavloLight;
+  src: url('fonts/DiavloMedium.otf');
+}
+
+@font-face {
+  font-family: DiavloMedium;
+  src: url('fonts/DiavloMedium.otf');
 }
