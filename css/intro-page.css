@@ -73,8 +73,10 @@ body {
   }
   
   #content-wrapper #whatwedo .technology  {
+    width: 900px;
     margin-top: -141px;
-    margin-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #content-wrapper #whatwedo .technology div {
@@ -83,14 +85,12 @@ body {
   }
     
   #content-wrapper #whatwedo .technology .app img {
-    margin-right: -72%;
   }
   
   #content-wrapper #whatwedo .technology .web img {
   }
   
   #content-wrapper #whatwedo .technology .design img {
-    margin-left : -72%;
   }
   
    #content-wrapper #whoweare img {
@@ -392,6 +392,10 @@ body {
     width: 100%;
   }
 
+  #content-wrapper #whatwedo .technology {
+    width: 100%;
+  }
+
   .navigation { 
     height: auto;
     width: 100%;
@@ -434,25 +438,25 @@ body {
 
 @font-face {
   font-family: DiavloBlack;
-  src: url('fonts/DiavloBlack.otf');
+  src: url('../fonts/DiavloBlack.otf');
 }
 
 @font-face {
   font-family: DiavloBold;
-  src: url('fonts/DiavloBold.otf');
+  src: url('../fonts/DiavloBold.otf');
 }
 
 @font-face {
   font-family: DiavloBook;
-  src: url('fonts/DiavloBook.otf');
+  src: url('../fonts/DiavloBook.otf');
 }
 
 @font-face {
   font-family: DiavloLight;
-  src: url('fonts/DiavloMedium.otf');
+  src: url('../fonts/DiavloMedium.otf');
 }
 
 @font-face {
   font-family: DiavloMedium;
-  src: url('fonts/DiavloMedium.otf');
+  src: url('../fonts/DiavloMedium.otf');
 }
