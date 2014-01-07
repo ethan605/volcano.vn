@@ -387,7 +387,7 @@ body {
                         translateZ(30px);
         }
 
-@media screen and (max-width: 900px) {
+/*@media screen and (max-width: 900px) {
   #content-wrapper .section img {
     width: 100%;
   }
@@ -434,7 +434,7 @@ body {
     right: 15px;
     top: 30%;
   }
-}
+}*/
 
 @font-face {
   font-family: DiavloBlack;
