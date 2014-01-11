@@ -65,6 +65,7 @@ body {
   }
 
   #content-wrapper #whatwedo > img {
+    width: 720px;
     display: none;
   }
 
