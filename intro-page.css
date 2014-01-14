@@ -417,7 +417,6 @@ a#pull {
     vertical-align: top;
     padding: 0;
     width: 100%;
-    height: 120px;
     position: relative;
 }
     .navigation a {
@@ -434,28 +433,25 @@ a#pull {
         display: inline;
         float: left;
         width: 20%;
-        height: 85px;
-        padding-top: 35px;
+        height: 65px;
+        padding-top: 25px;
         text-align: center;
         cursor: auto;
     }
-    .navigation li:hover, .selected-nav {
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#b42d2d), to(#b42d2d));
-        background-image: -webkit-linear-gradient(top, #b42d2d, #b42d2d);
-        background-image:    -moz-linear-gradient(top, #b42d2d, #b42d2d); 
-        background-image:     -ms-linear-gradient(top, #b42d2d, #b42d2d); 
-        background-image:      -o-linear-gradient(top, #b42d2d, #b42d2d); 
-        background-image:         linear-gradient(to bottom, #b42d2d, #b42d2d);
+    .navigation li#icon {
+        padding-top: 10px;
     }
-    
+    .navigation li:hover, .selected-nav {
+        background-color: #b42d2d;
+    }
+    .navigation li#icon:hover {
+        padding-top: 10px;
+        background-color: rgba(0, 0, 0, 0);
+    }
     .navigation li a {
         position: relative;
         text-decoration: none;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
-    }
-    
-    .navigation li:hover a, .selected-nav a, .selected-nav2 a, .top a{
-        color: #fff !important;
     }
