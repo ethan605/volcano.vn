@@ -1,44 +1,38 @@
 @font-face {
     font-family: 'Diavlo BLACK';
-    src: url('fonts/Diavlo_BLACK_II_37 Jos.woff');
-    src: local('Diavlo_BLACK_II_37 Jos'),
-    url('fonts/Diavlo_BLACK_II_37 Jos.woff') format('woff');
+    src: url('fonts/Diavlo_BLACK_II_37 Jos.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {    
     font-family: 'Diavlo BOLD';
-    src: url('Diavlo_BOLD_II_37 Jos'),
-    url('fonts/Diavlo_BOLD_II_37 Jos.woff') format('woff');
+    src: url('fonts/Diavlo_BOLD_II_37 Jos.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}    
+}
     
 @font-face {
     font-family: 'Diavlo BOOK';
-    src: url('Diavlo_BOOK_II_37 Jos'),
-    url('fonts/Diavlo_BOOK_II_37 Jos.woff') format('woff');
+    src: url('fonts/Diavlo_BOOK_II_37 Jos.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }   
     
 @font-face {
     font-family: 'Diavlo LIGHT';
-    src: url('Diavlo_LIGHT_II_37 Jos'),
-    url('fonts/Diavlo_LIGHT_II_37 Jos.woff') format('woff');
+    src: url('fonts/Diavlo_LIGHT_II_37 Jos.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }       
 
 @font-face { 
     font-family: 'Diavlo MEDIUM';
-    src: url('Diavlo_MEDIUM_II_37 Jos'),
-    url('fonts/Diavlo_MEDIUM_II_37 Jos.woff') format('woff');
+    src: url('fonts/Diavlo_MEDIUM_II_37 Jos.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}       
-    
+}
+
 body {
     margin: 0 auto;
     background-color: #373737;
@@ -51,7 +45,6 @@ body {
     display: block;
     position: fixed;
     width: 960px;
-    height: 120px;
     background: #373737;
     padding-top: 0px;   
 }
@@ -433,7 +426,7 @@ a#pull {
         display: inline;
         float: left;
         width: 20%;
-        height: 65px;
+        height: 75px;
         padding-top: 25px;
         text-align: center;
         cursor: auto;
