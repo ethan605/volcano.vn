@@ -5,36 +5,33 @@
     <title>VOLCANO.VN</title>
     <meta name="description" content="Volcano Team"/>
     <meta name="author" content="VOLCANO.VN"/>
-    <link rel="stylesheet" href="intro-page.css"/>
+    <link rel="stylesheet" href="css/intro-page.css"/>
+    <script type="text/javascript" src="javascript/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="javascript/intro-page.js"></script>
-    <script type="text/javascript" src="javascript/jquery.1.7.2.min.js"></script>
-    <script type="text/javascript" src="javascript/jquery.scrollTo.js"></script>
-    <script type="text/javascript" src="javascript/jquery.global.js"></script>
-    <script type="text/javascript" src="javascript/jquery.easing.compatibility.js"></script>
 </head><!--End @head-->
 <body>
     <div id="header-wrapper">
         <div class="wrapper">
             <ul class="navigation">
-                <li><a class="scrollTo" href="#whatwedo">WHAT<br />WE DO</a></li><!--WHAT WE DO-->
-                <li><a class="scrollTo" href="#transit2">WHO<br />WE ARE</a></li><!--WHO WE ARE-->
+                <li class="section what-we-do"><a href="#">WHAT<br />WE DO</a></li><!--WHAT WE DO-->
+                <li class="section who-we-are"><a href="#">WHO<br />WE ARE</a></li><!--WHO WE ARE-->
                 <li id="icon"><img src="images/logo 80x80.png"/></li>
-                <li><a class="scrollTo" href="#ourwork">OUR<br />WORK</a></li><!--OUR WORK-->
-                <li><a class="scrollTo" href="#contactus">CONTACT<br />US</a></li><!--CONTACT US-->
+                <li class="section our-work"><a href="#">OUR<br />WORK</a></li><!--OUR WORK-->
+                <li class="section contact-us"><a href="#">CONTACT<br />US</a></li><!--CONTACT US-->
             </ul>
         </div><!--End @wrapper-->
     </div><!--End @header-wrapper-->
     
     <div id="content-wrapper">
-        <div id="whatwedo">
+        <div id="what-we-do">
             <p>VOLCANO VIETNAM</p>
             <img src="images/img-what_we_do-bg.png" />
-        </div><!--End @whatwedo-->
+        </div><!--End @what-we-do-->
         
         <div id="transit1"></div><!--End @transit1-->
         <div id="transit2"></div><!--End @transit2-->
         
-        <div id="whoweare">
+        <div id="who-we-are">
             <img id="bg_whoweare" src="images/BG whoweare.png"/>
             <img id="propic1" src="images/pic_Binh.png" />
             <img id="propic2" src="images/pic_Chien.png" />
@@ -50,12 +47,12 @@
                 Together we build a team to develop new products and solve life problems.
                 We hope to turn innovative ideas into real actions and creat true values for as many people as we can.
             </p>
-        </div><!--End @whoweare-->
+        </div><!--End @who-we-are-->
         
         <div id="transit3"></div><!--End @transit3-->
         <div id="transit4"></div><!--End @transit4-->
         
-        <div id="ourwork">
+        <div id="our-work">
             <img id="bg_ourwork" src="images/BG ourwork.png" />
             <img id="project1" src="images/project.jpg" />
             <img id="project2" src="images/project.jpg" />
@@ -69,12 +66,12 @@
             <img id="project10" src="images/project.jpg" />
             <img id="project11" src="images/project.jpg" />
             <img id="project12" src="images/project.jpg" />
-        </div><!--End @ourwork-->
+        </div><!--End @our-work-->
         
         <div id="transit5"></div><!--End @transit5-->
         <div id="transit6"></div><!--End @transit6-->
         
-        <div id="contactus">
+        <div id="contact-us">
             <img id="bg_contactus" src="images/BG contactus.png"/>
             
             <a id="contact_email" href="mailto:contact@volcano.vn?Subject=Hello%20again" target="_top">

@@ -1,34 +1,34 @@
 @font-face {
     font-family: 'Diavlo BLACK';
-    src: url('fonts/Diavlo_BLACK_II_37 Jos.woff') format('woff');
+    src: url('../fonts/Diavlo_BLACK_II_37 Jos.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {    
     font-family: 'Diavlo BOLD';
-    src: url('fonts/Diavlo_BOLD_II_37 Jos.woff') format('woff');
+    src: url('../fonts/Diavlo_BOLD_II_37 Jos.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
     
 @font-face {
     font-family: 'Diavlo BOOK';
-    src: url('fonts/Diavlo_BOOK_II_37 Jos.woff') format('woff');
+    src: url('../fonts/Diavlo_BOOK_II_37 Jos.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }   
     
 @font-face {
     font-family: 'Diavlo LIGHT';
-    src: url('fonts/Diavlo_LIGHT_II_37 Jos.woff') format('woff');
+    src: url('../fonts/Diavlo_LIGHT_II_37 Jos.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }       
 
 @font-face { 
     font-family: 'Diavlo MEDIUM';
-    src: url('fonts/Diavlo_MEDIUM_II_37 Jos.woff') format('woff');
+    src: url('../fonts/Diavlo_MEDIUM_II_37 Jos.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -55,19 +55,19 @@ body {
     position: absolute;
 }
 
-    #content-wrapper #whatwedo {
+    #content-wrapper #what-we-do {
         height: 680px;
         background-color: #373737;
         padding-top: 120px;
         position: relative;
     }
 
-        #content-wrapper #whatwedo img {
+        #content-wrapper #what-we-do img {
             height: 680px;
             width: 960px;
         }
         
-        #content-wrapper #whatwedo p {
+        #content-wrapper #what-we-do p {
             z-index: 2;
             font-family: Diavlo BOLD;
             font-size: 38px;
@@ -77,13 +77,13 @@ body {
             padding-left: 300px;
         }
         
-    #content-wrapper #whoweare {
+    #content-wrapper #who-we-are {
         height: 560px;
         background-color: #b4412d;
         position: relative;
     }
 
-        #content-wrapper #whoweare #bg_whoweare {
+        #content-wrapper #who-we-are #bg_whoweare {
             z-index: 1;
             width: 960px;
             position: absolute;
@@ -91,70 +91,70 @@ body {
             top: 0;
         }
 
-        #content-wrapper #whoweare #propic1 {
+        #content-wrapper #who-we-are #propic1 {
             z-index: 3; 
             position: absolute;
             top: 200px;
             left: 10px;
         }
         
-        #content-wrapper #whoweare #propic2 {
+        #content-wrapper #who-we-are #propic2 {
             z-index: 3; 
             position: absolute;
             top: 360px;
             left: 750px;
         }
         
-        #content-wrapper #whoweare #propic3 {
+        #content-wrapper #who-we-are #propic3 {
             z-index: 3; 
             position: absolute;
             top: 240px;
             left: 670px;
         }
         
-         #content-wrapper #whoweare #propic4 {
+         #content-wrapper #who-we-are #propic4 {
             z-index: 3; 
             position: absolute;
             top: 410px;
             left: 90px;
         }
         
-        #content-wrapper #whoweare #propic5 {
+        #content-wrapper #who-we-are #propic5 {
             z-index: 3; 
             position: absolute;
             top: 300px;
             left: 250px;
         }
         
-        #content-wrapper #whoweare #propic6 {
+        #content-wrapper #who-we-are #propic6 {
             z-index: 3; 
             position: absolute;
             top: 180px;
             left: 350px;
         }
         
-        #content-wrapper #whoweare #propic7 {
+        #content-wrapper #who-we-are #propic7 {
             z-index: 3; 
             position: absolute;
             top: 400px;
             left: 420px;
         }
         
-        #content-wrapper #whoweare #propic8 {
+        #content-wrapper #who-we-are #propic8 {
             z-index: 3; 
             position: absolute;
             top: 260px;
             left: 510px;
         }
         
-         #content-wrapper #whoweare #propic9 {
+         #content-wrapper #who-we-are #propic9 {
             z-index: 3; 
             position: absolute;
             top: 200px;
             left: 830px;
         }
         
-        #content-wrapper #whoweare p {
+        #content-wrapper #who-we-are p {
             z-index: 2;
             font-family: Diavlo LIGHT;
             font-size: 18px;
@@ -166,109 +166,109 @@ body {
             padding-right: 90px;
         }
         
-    #content-wrapper #ourwork {
+    #content-wrapper #our-work {
         height: 580px;
         background-color: #b42d2d;
         position: relative;
     }
 
-        #content-wrapper #ourwork #bg_ourwork {
+        #content-wrapper #our-work #bg_ourwork {
             z-index: 1;
             width: 960px;
             height: 520px;
             padding-top: 30px;
         }
         
-        #content-wrapper #ourwork #project1{
+        #content-wrapper #our-work #project1{
             z-index: 3;
             position: absolute;
             left: 10px;
             top: 60px;
         }
         
-        #content-wrapper #ourwork #project2{
+        #content-wrapper #our-work #project2{
             z-index: 3;
             position: absolute;
             left: 250px;
             top: 60px;
         }
 
-        #content-wrapper #ourwork #project3{
+        #content-wrapper #our-work #project3{
             z-index: 3;
             position: absolute;
             left: 490px;
             top: 60px;
         }
         
-        #content-wrapper #ourwork #project4{
+        #content-wrapper #our-work #project4{
             z-index: 3;
             position: absolute;
             left: 730px;
             top: 60px;
         }
         
-        #content-wrapper #ourwork #project5{
+        #content-wrapper #our-work #project5{
             z-index: 3;
             position: absolute;
             left: 10px;
             top: 220px;
         }
         
-        #content-wrapper #ourwork #project6{
+        #content-wrapper #our-work #project6{
             z-index: 3;
             position: absolute;
             left: 250px;
             top: 220px;
         }
         
-        #content-wrapper #ourwork #project7{
+        #content-wrapper #our-work #project7{
             z-index: 3;
             position: absolute;
             left: 490px;
             top: 220px;
         }
         
-        #content-wrapper #ourwork #project8{
+        #content-wrapper #our-work #project8{
             z-index: 3;
             position: absolute;
             left: 730px;
             top: 220px;
         }
         
-        #content-wrapper #ourwork #project9{
+        #content-wrapper #our-work #project9{
             z-index: 3;
             position: absolute;
             left: 10px;
             top: 380px;
         }
         
-        #content-wrapper #ourwork #project10{
+        #content-wrapper #our-work #project10{
             z-index: 3;
             position: absolute;
             left: 250px;
             top: 380px;
         }
         
-        #content-wrapper #ourwork #project11{
+        #content-wrapper #our-work #project11{
             z-index: 3;
             position: absolute;
             left: 490px;
             top: 380px;
         }
         
-        #content-wrapper #ourwork #project12{
+        #content-wrapper #our-work #project12{
             z-index: 3;
             position: absolute;
             left: 730px;
             top: 380px;
         }
         
-    #content-wrapper #contactus {
+    #content-wrapper #contact-us {
         height: 420px;
         background-color: #7d2828;
         position: relative;
-}
-        #content-wrapper #contactus #bg_contactus {
+    }
+        #content-wrapper #contact-us #bg_contactus {
             z-index: 1;
             width: 960px;
             height: 360px;
@@ -277,21 +277,21 @@ body {
             left: 0;
         }
         
-        #content-wrapper #contactus #contact_email {
+        #content-wrapper #contact-us #contact_email {
             z-index: 3;
             position: absolute;
             top: 60px;
             left: 370px;
         }
         
-        #content-wrapper #contactus #contact_phone {
+        #content-wrapper #contact-us #contact_phone {
             z-index: 3;
             position: absolute;
             top: 60px;
             left: 490px;
         }
         
-        #content-wrapper #contactus #mess_content {
+        #content-wrapper #contact-us #mess_content {
             z-index: 3;
             height: 170px;
             width: 460px;
@@ -305,7 +305,7 @@ body {
             font-size: 14px;
         }
         
-        #content-wrapper #contactus #mess_username {
+        #content-wrapper #contact-us #mess_username {
             z-index: 3;
             height: 50px;
             width: 140px;
@@ -319,7 +319,7 @@ body {
             font-size: 14px;
         }
         
-        #content-wrapper #contactus #mess_email {
+        #content-wrapper #contact-us #mess_email {
             z-index: 3;
             height: 50px;
             width: 140px;
@@ -333,7 +333,7 @@ body {
             font-size: 14px;
         }
         
-        #content-wrapper #contactus #button_send {
+        #content-wrapper #contact-us #button_send {
             z-index: 3;
             height: 50px;
             width: 140px;
