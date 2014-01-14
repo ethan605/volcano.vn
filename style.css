@@ -1,0 +1,461 @@
+@font-face {
+    font-family: 'Diavlo BLACK';
+    src: url('fonts/Diavlo_BLACK_II_37 Jos.woff');
+    src: local('Diavlo_BLACK_II_37 Jos'),
+    url('fonts/Diavlo_BLACK_II_37 Jos.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {    
+    font-family: 'Diavlo BOLD';
+    src: url('Diavlo_BOLD_II_37 Jos'),
+    url('fonts/Diavlo_BOLD_II_37 Jos.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}    
+    
+@font-face {
+    font-family: 'Diavlo BOOK';
+    src: url('Diavlo_BOOK_II_37 Jos'),
+    url('fonts/Diavlo_BOOK_II_37 Jos.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}   
+    
+@font-face {
+    font-family: 'Diavlo LIGHT';
+    src: url('Diavlo_LIGHT_II_37 Jos'),
+    url('fonts/Diavlo_LIGHT_II_37 Jos.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}       
+
+@font-face { 
+    font-family: 'Diavlo MEDIUM';
+    src: url('Diavlo_MEDIUM_II_37 Jos'),
+    url('fonts/Diavlo_MEDIUM_II_37 Jos.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}       
+    
+body {
+    margin: 0 auto;
+    background-color: #373737;
+    width: 960px;
+    text-align: center;
+}
+
+#header-wrapper {
+    z-index: 4;
+    display: block;
+    position: fixed;
+    width: 960px;
+    height: 120px;
+    background: #373737;
+    padding-top: 0px;   
+}
+
+#content-wrapper {
+    display: block;
+    width: 960px;
+    position: absolute;
+}
+
+    #content-wrapper #whatwedo {
+        height: 680px;
+        background-color: #373737;
+        padding-top: 120px;
+        position: relative;
+    }
+
+        #content-wrapper #whatwedo img {
+            height: 680px;
+            width: 960px;
+        }
+        
+        #content-wrapper #whatwedo p {
+            z-index: 2;
+            font-family: Diavlo BOLD;
+            font-size: 38px;
+            position: absolute;
+            color: #b42d2d;
+            text-align: center;
+            padding-left: 300px;
+        }
+        
+    #content-wrapper #whoweare {
+        height: 560px;
+        background-color: #b4412d;
+        position: relative;
+    }
+
+        #content-wrapper #whoweare #bg_whoweare {
+            z-index: 1;
+            width: 960px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        #content-wrapper #whoweare #propic1 {
+            z-index: 3; 
+            position: absolute;
+            top: 200px;
+            left: 10px;
+        }
+        
+        #content-wrapper #whoweare #propic2 {
+            z-index: 3; 
+            position: absolute;
+            top: 360px;
+            left: 750px;
+        }
+        
+        #content-wrapper #whoweare #propic3 {
+            z-index: 3; 
+            position: absolute;
+            top: 240px;
+            left: 670px;
+        }
+        
+         #content-wrapper #whoweare #propic4 {
+            z-index: 3; 
+            position: absolute;
+            top: 410px;
+            left: 90px;
+        }
+        
+        #content-wrapper #whoweare #propic5 {
+            z-index: 3; 
+            position: absolute;
+            top: 300px;
+            left: 250px;
+        }
+        
+        #content-wrapper #whoweare #propic6 {
+            z-index: 3; 
+            position: absolute;
+            top: 180px;
+            left: 350px;
+        }
+        
+        #content-wrapper #whoweare #propic7 {
+            z-index: 3; 
+            position: absolute;
+            top: 400px;
+            left: 420px;
+        }
+        
+        #content-wrapper #whoweare #propic8 {
+            z-index: 3; 
+            position: absolute;
+            top: 260px;
+            left: 510px;
+        }
+        
+         #content-wrapper #whoweare #propic9 {
+            z-index: 3; 
+            position: absolute;
+            top: 200px;
+            left: 830px;
+        }
+        
+        #content-wrapper #whoweare p {
+            z-index: 2;
+            font-family: Diavlo LIGHT;
+            font-size: 18px;
+            position: absolute;
+            color: white;
+            padding-top: 30px;
+            text-align: center;
+            padding-left: 90px;
+            padding-right: 90px;
+        }
+        
+    #content-wrapper #ourwork {
+        height: 580px;
+        background-color: #b42d2d;
+        position: relative;
+    }
+
+        #content-wrapper #ourwork #bg_ourwork {
+            z-index: 1;
+            width: 960px;
+            height: 520px;
+            padding-top: 30px;
+        }
+        
+        #content-wrapper #ourwork #project1{
+            z-index: 3;
+            position: absolute;
+            left: 10px;
+            top: 60px;
+        }
+        
+        #content-wrapper #ourwork #project2{
+            z-index: 3;
+            position: absolute;
+            left: 250px;
+            top: 60px;
+        }
+
+        #content-wrapper #ourwork #project3{
+            z-index: 3;
+            position: absolute;
+            left: 490px;
+            top: 60px;
+        }
+        
+        #content-wrapper #ourwork #project4{
+            z-index: 3;
+            position: absolute;
+            left: 730px;
+            top: 60px;
+        }
+        
+        #content-wrapper #ourwork #project5{
+            z-index: 3;
+            position: absolute;
+            left: 10px;
+            top: 220px;
+        }
+        
+        #content-wrapper #ourwork #project6{
+            z-index: 3;
+            position: absolute;
+            left: 250px;
+            top: 220px;
+        }
+        
+        #content-wrapper #ourwork #project7{
+            z-index: 3;
+            position: absolute;
+            left: 490px;
+            top: 220px;
+        }
+        
+        #content-wrapper #ourwork #project8{
+            z-index: 3;
+            position: absolute;
+            left: 730px;
+            top: 220px;
+        }
+        
+        #content-wrapper #ourwork #project9{
+            z-index: 3;
+            position: absolute;
+            left: 10px;
+            top: 380px;
+        }
+        
+        #content-wrapper #ourwork #project10{
+            z-index: 3;
+            position: absolute;
+            left: 250px;
+            top: 380px;
+        }
+        
+        #content-wrapper #ourwork #project11{
+            z-index: 3;
+            position: absolute;
+            left: 490px;
+            top: 380px;
+        }
+        
+        #content-wrapper #ourwork #project12{
+            z-index: 3;
+            position: absolute;
+            left: 730px;
+            top: 380px;
+        }
+        
+    #content-wrapper #contactus {
+        height: 420px;
+        background-color: #7d2828;
+        position: relative;
+}
+        #content-wrapper #contactus #bg_contactus {
+            z-index: 1;
+            width: 960px;
+            height: 360px;
+            position: absolute;
+            top: 30px;
+            left: 0;
+        }
+        
+        #content-wrapper #contactus #contact_email {
+            z-index: 3;
+            position: absolute;
+            top: 60px;
+            left: 370px;
+        }
+        
+        #content-wrapper #contactus #contact_phone {
+            z-index: 3;
+            position: absolute;
+            top: 60px;
+            left: 490px;
+        }
+        
+        #content-wrapper #contactus #mess_content {
+            z-index: 3;
+            height: 170px;
+            width: 460px;
+            position: absolute;
+            top: 190px;
+            left: 170px;
+            border: 0;
+            background-color: #fff0c8;
+            resize: none;
+            font-family: Diavlo LIGHT;
+            font-size: 14px;
+        }
+        
+        #content-wrapper #contactus #mess_username {
+            z-index: 3;
+            height: 50px;
+            width: 140px;
+            position: absolute;
+            top: 190px;
+            left: 650px;
+            border: 0;
+            background-color: #fff0c8;
+            resize: none;
+            font-family: Diavlo LIGHT;
+            font-size: 14px;
+        }
+        
+        #content-wrapper #contactus #mess_email {
+            z-index: 3;
+            height: 50px;
+            width: 140px;
+            position: absolute;
+            top: 250px;
+            left: 650px;
+            border: 0;
+            background-color: #fff0c8;
+            resize: none;
+            font-family: Diavlo LIGHT;
+            font-size: 14px;
+        }
+        
+        #content-wrapper #contactus #button_send {
+            z-index: 3;
+            height: 50px;
+            width: 140px;
+            position: absolute;
+            top: 310px;
+            left: 650px;
+            border: 0;
+            background-color: #fa8732;
+            resize: none;
+            font-family: Diavlo BOLD;
+            font-size: 24px;
+            color: #c8ebff;
+        }
+
+    #content-wrapper #transit1 {
+        height: 30px;
+        background-color: #b4502d;
+    }
+    #content-wrapper #transit2 {
+        height: 30px;
+        background-color: #b4462d;
+    }
+    #content-wrapper #transit3 {
+        height: 30px;
+        background-color: #b43c2d;
+    }
+    #content-wrapper #transit4 {
+        height: 30px;
+        background-color: #b4372d;
+    }
+    #content-wrapper #transit5 {
+        height: 30px;
+        background-color: #a52d2d;
+    }
+    #content-wrapper #transit6 {
+        height: 30px;
+        background-color: #962828;
+    }
+    #content-wrapper #transit7 {
+        height: 30px;
+        background-color: #692d2d;
+    }
+    #content-wrapper #transit8 {
+        height: 30px;
+        background-color: #553232;
+    }
+
+    #content-wrapper #signature {
+        height: 100px;
+        background-color: #373737;
+        position: relative;
+    }
+
+    #content-wrapper #signature p {
+        position: absolute;
+        text-align: center;
+        color: #999999;
+        font-family: Diavlo LIGHT;
+        font-size: 14px;
+        padding-top: 30px;
+    }
+
+a#pull {
+    display: none;
+}
+
+.navigation {
+    font-family: Diavlo MEDIUM;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    list-style-type: none;
+    vertical-align: top;
+    padding: 0;
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+    .navigation a {
+        color: #fff;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+    }
+    .navigation li img {
+        top: 20px;
+    }
+    .navigation li {
+        display: inline;
+        float: left;
+        width: 20%;
+        height: 85px;
+        padding-top: 35px;
+        text-align: center;
+        cursor: auto;
+    }
+    .navigation li:hover, .selected-nav {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#b42d2d), to(#b42d2d));
+        background-image: -webkit-linear-gradient(top, #b42d2d, #b42d2d);
+        background-image:    -moz-linear-gradient(top, #b42d2d, #b42d2d); 
+        background-image:     -ms-linear-gradient(top, #b42d2d, #b42d2d); 
+        background-image:      -o-linear-gradient(top, #b42d2d, #b42d2d); 
+        background-image:         linear-gradient(to bottom, #b42d2d, #b42d2d);
+    }
+    
+    .navigation li a {
+        position: relative;
+        text-decoration: none;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    
+    .navigation li:hover a, .selected-nav a, .selected-nav2 a, .top a{
+        color: #fff !important;
+    }

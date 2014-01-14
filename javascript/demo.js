@@ -54,19 +54,27 @@ $(document).ready(function() {
 });
 function init(){
 	//init what we do
-	$("#content-wrapper #whatwedo .technology .app").mouseover(function() {
-		$("#content-wrapper #whatwedo > img").hide();
-    $("#content-wrapper #whatwedo > img:nth-child(1)").show();
+	$("#content-wrapper #whatwedo .technology .app").mouseover(function(){
+		$("#content-wrapper #whatwedo img:nth-child(1)").show();
+		$("#content-wrapper #whatwedo img:nth-child(2)").hide();
+		$("#content-wrapper #whatwedo img:nth-child(3)").hide();
+		$("#content-wrapper #whatwedo .technology .web img").show();
+		$("#content-wrapper #whatwedo .technology .design img").show();
+		$("#content-wrapper #whatwedo .technology .app img").hide();
 	});
-	
-  $("#content-wrapper #whatwedo .technology .web").mouseover(function() {
-    $("#content-wrapper #whatwedo > img").hide();
-		$("#content-wrapper #whatwedo > img:nth-child(2)").show();
+	$("#content-wrapper #whatwedo .technology .web").mouseover(function(){
+		$("#content-wrapper #whatwedo img:nth-child(2)").show();
+		$("#content-wrapper #whatwedo img:nth-child(1)").hide();
+		$("#content-wrapper #whatwedo img:nth-child(3)").hide();
+		$("#content-wrapper #whatwedo .technology .app img").show();
+		$("#content-wrapper #whatwedo .technology .design img").show();
 	});
-
-	$("#content-wrapper #whatwedo .technology .design").mouseover(function() {
-    $("#content-wrapper #whatwedo > img").hide();
-		$("#content-wrapper #whatwedo > img:nth-child(3)").show();
+	$("#content-wrapper #whatwedo .technology .design").mouseover(function(){
+		$("#content-wrapper #whatwedo img:nth-child(3)").show();
+		$("#content-wrapper #whatwedo img:nth-child(1)").hide();
+		$("#content-wrapper #whatwedo img:nth-child(2)").hide();
+		$("#content-wrapper #whatwedo .technology .app img").show();
+		$("#content-wrapper #whatwedo .technology .web img").show();
 	});
 	
 	//init who we are
