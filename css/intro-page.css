@@ -136,15 +136,15 @@ body {
 }
 
 .text1 {
-  top: 240px;
+  top: 230px;
   margin-left: -200px;
 }
 .text2 {
-  top: 170px;
+  top: 160px;
   margin-left: -50px;
 }
 .text3 {
-  top: 210px;
+  top: 200px;
   margin-left: 100px;
 }
 
@@ -300,8 +300,8 @@ body {
   padding: 5px;
   display: inline-block;
   border-radius: 20px;
-  height: 120px;
-  width: 200px;
+  height: 140px;
+  width: 220px;
 }
 
 #content-wrapper #contact-us {
