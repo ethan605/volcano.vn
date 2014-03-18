@@ -16,23 +16,40 @@ $(document).ready(function() {
         willSelectNavigationSection = true;
       })
   });
-  
+
   //Detecting user's scroll
   $(window).scroll(function() {
     //Check scroll position
-    scrollPosition  = $(this).scrollTop();
-    
+    scrollPosition  = $(window).scrollTop();
+
     //Move trough each menu and check its position with scroll position then add selected-nav class
     $(".navigation .section").each(function() {
       sectionName = this.classList[1];
       originSectionPosition  = $("#" + sectionName).offset().top;
       sectionPosition = originSectionPosition - navigationHeight - offsetTolerance;
-      
-      if (willSelectNavigationSection && scrollPosition >= sectionPosition) {
-        $(".selected-nav").removeClass("selected-nav");
+
+
+
+      if (scrollPosition >= sectionPosition && scrollPosition - 400 < sectionPosition ) {
+        console.log(sectionName, scrollPosition, sectionPosition);
+        $(".navigation .section").removeClass("selected-nav");
         $(".navigation ." + sectionName).addClass("selected-nav");
       }
     });
+  });
+
+  var allwhatwedos =[["Audi","Volvo","BMW"], ["Honda","Suzuki","Yamaha"], ["Thongnhat","Giant","Mini"]];
+  $( ".anchor" ).click(function() {
+    whatwedos = $(this).data("text").split(';');
+    anchor = $(this).data("anchor")
+    $(".magma").fadeOut(200);
+    $(".magma"+ anchor).fadeIn(200);
+    $(".text").fadeOut(200, function(){
+      $(".text1").text(whatwedos[0]);
+      $(".text2").text(whatwedos[1]);
+      $(".text3").text(whatwedos[2]);
+    });
+    $(".text").fadeIn(200);
   });
 })
 
@@ -81,28 +98,28 @@ $(document).ready(function() {
 // 		$("#content-wrapper #whatwedo .technology .app img").show();
 // 		$("#content-wrapper #whatwedo .technology .web img").show();
 // 	});
-	
+
 // 	//init who we are
 // 	_introduceCanvas = document.getElementById("whoweare-canvas");
 // 	_introduceContext = _introduceCanvas.getContext("2d");
 // 	_introduceContext.font = " 15pt Calibri";
 // 	_introduceContext.fillStyle="white";
 // 	_introduceContext.fillText("Xin chao tat ca moi nguoi chung toi la volcano!",150,50);
-	
+
 // 	$("#content-wrapper #whoweare .member .nghia").mouseover(function(){
 // 		$("#content-wrapper #whoweare .member .nghia img:nth-child(1)").show();
 // 	});
 // 	$("#content-wrapper #whoweare .member .nghia").mouseout(function(){
 // 		$("#content-wrapper #whoweare .member .nghia img:nth-child(1)").hide();
 // 	});
-	
+
 // 	$("#content-wrapper #whoweare .member .dang").mouseover(function(){
 // 		$("#content-wrapper #whoweare .member .dang img:nth-child(1)").show();
 // 	});
 // 	$("#content-wrapper #whoweare .member .dang").mouseout(function(){
 // 		$("#content-wrapper #whoweare .member .dang img:nth-child(1)").hide();
 // 	});
-	
+
 // 	//init contact us
 // 	$("#content-wrapper #contactus .contact .icon_info img:nth-child(1)").mouseover(function(){
 // 		$("#content-wrapper #contactus .contact .info img:nth-child(1)").show();
@@ -110,14 +127,14 @@ $(document).ready(function() {
 // 	$("#content-wrapper #contactus .contact .icon_info img:nth-child(1)").mouseout(function(){
 // 		$("#content-wrapper #contactus .contact .info img:nth-child(1)").hide();
 // 	});
-	
+
 // 	$("#content-wrapper #contactus .contact .icon_info img:nth-child(2)").mouseover(function(){
 // 		$("#content-wrapper #contactus .contact .info img:nth-child(2)").show();
 // 	});
 // 	$("#content-wrapper #contactus .contact .icon_info img:nth-child(2)").mouseout(function(){
 // 		$("#content-wrapper #contactus .contact .info img:nth-child(2)").hide();
 // 	});
-	
+
 // 	$("#content-wrapper #contactus .contact .send").click(function(){
 // 		alert("Name : " + $("#content-wrapper #contactus .contact .messagesentry #messages").val() + "\n"
 // 				+ "Email : " + $("#content-wrapper #contactus .contact .username #username").val() + "\n"

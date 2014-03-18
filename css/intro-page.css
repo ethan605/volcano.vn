@@ -1,400 +1,430 @@
 @font-face {
-    font-family: 'Diavlo BLACK';
-    src: url('../fonts/Diavlo_BLACK_II_37 Jos.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Diavlo BLACK';
+  src: url('../fonts/Diavlo_BLACK_II_37 Jos.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face {    
-    font-family: 'Diavlo BOLD';
-    src: url('../fonts/Diavlo_BOLD_II_37 Jos.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'Diavlo BOLD';
+  src: url('../fonts/Diavlo_BOLD_II_37 Jos.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
-    
-@font-face {
-    font-family: 'Diavlo BOOK';
-    src: url('../fonts/Diavlo_BOOK_II_37 Jos.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}   
-    
-@font-face {
-    font-family: 'Diavlo LIGHT';
-    src: url('../fonts/Diavlo_LIGHT_II_37 Jos.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}       
 
-@font-face { 
-    font-family: 'Diavlo MEDIUM';
-    src: url('../fonts/Diavlo_MEDIUM_II_37 Jos.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'Diavlo BOOK';
+  src: url('../fonts/Diavlo_BOOK_II_37 Jos.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Diavlo LIGHT';
+  src: url('../fonts/Diavlo_LIGHT_II_37 Jos.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Diavlo MEDIUM';
+  src: url('../fonts/Diavlo_MEDIUM_II_37 Jos.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    margin: 0 auto;
-    background-color: #373737;
-    width: 960px;
-    text-align: center;
+  background-color: #373737;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#anchor-what-we-do {
+  position: absolute;
+  top: 90px;
+}
+
+#header-wrapper .wrapper {
+  width: 960px;
+  margin: 0 auto;
+  display: block;
+}
+
+.magma {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -468px;
+}
+
+.magma2, .magma3 {
+  display: none;
 }
 
 #header-wrapper {
-    z-index: 4;
-    display: block;
-    position: fixed;
-    width: 960px;
-    background: #373737;
-    padding-top: 0px;   
+  z-index: 999;
+  display: block;
+  background: #373737;
+  padding-top: 0px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 #content-wrapper {
-    display: block;
-    width: 960px;
-    position: absolute;
+  display: block;
+  width: 100%;
 }
 
-    #content-wrapper #what-we-do {
-        height: 680px;
-        background-color: #373737;
-        padding-top: 120px;
-        position: relative;
-    }
+#what-we-do {
+  text-align: center;
+  background-color: #373737;
+  padding-top: 120px;
+  position: relative;
+}
 
-        #content-wrapper #what-we-do img {
-            height: 680px;
-            width: 960px;
-        }
-        
-        #content-wrapper #what-we-do p {
-            z-index: 2;
-            font-family: Diavlo BOLD;
-            font-size: 38px;
-            position: absolute;
-            color: #b42d2d;
-            text-align: center;
-            padding-left: 300px;
-        }
-        
-    #content-wrapper #who-we-are {
-        height: 560px;
-        background-color: #b4412d;
-        position: relative;
-    }
+#what-we-do .wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  text-align: center;
+}
 
-        #content-wrapper #who-we-are #bg_whoweare {
-            z-index: 1;
-            width: 960px;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
+#what-we-do .wrapper .anchor {
+  width: 300px;
+  height:70px;
+  display: inline-block;
+  border-radius: 10px;
+  background: #ffe182;
+  color: #373737;
+  font-family: 'Diavlo BOLD';
+  text-decoration: none;
+  font-size: 20px;
+  padding-top: 30px;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  cursor: pointer;
+  z-index: 99;
+}
 
-        #content-wrapper #who-we-are #propic1 {
-            z-index: 3; 
-            position: absolute;
-            top: 200px;
-            left: 10px;
-        }
-        
-        #content-wrapper #who-we-are #propic2 {
-            z-index: 3; 
-            position: absolute;
-            top: 360px;
-            left: 750px;
-        }
-        
-        #content-wrapper #who-we-are #propic3 {
-            z-index: 3; 
-            position: absolute;
-            top: 240px;
-            left: 670px;
-        }
-        
-         #content-wrapper #who-we-are #propic4 {
-            z-index: 3; 
-            position: absolute;
-            top: 410px;
-            left: 90px;
-        }
-        
-        #content-wrapper #who-we-are #propic5 {
-            z-index: 3; 
-            position: absolute;
-            top: 300px;
-            left: 250px;
-        }
-        
-        #content-wrapper #who-we-are #propic6 {
-            z-index: 3; 
-            position: absolute;
-            top: 180px;
-            left: 350px;
-        }
-        
-        #content-wrapper #who-we-are #propic7 {
-            z-index: 3; 
-            position: absolute;
-            top: 400px;
-            left: 420px;
-        }
-        
-        #content-wrapper #who-we-are #propic8 {
-            z-index: 3; 
-            position: absolute;
-            top: 260px;
-            left: 510px;
-        }
-        
-         #content-wrapper #who-we-are #propic9 {
-            z-index: 3; 
-            position: absolute;
-            top: 200px;
-            left: 830px;
-        }
-        
-        #content-wrapper #who-we-are p {
-            z-index: 2;
-            font-family: Diavlo LIGHT;
-            font-size: 18px;
-            position: absolute;
-            color: white;
-            padding-top: 30px;
-            text-align: center;
-            padding-left: 90px;
-            padding-right: 90px;
-        }
-        
-    #content-wrapper #our-work {
-        height: 580px;
-        background-color: #b42d2d;
-        position: relative;
-    }
+#what-we-do .wrapper .anchor1 {
+  margin-left: -470px;
+}
 
-        #content-wrapper #our-work #bg_ourwork {
-            z-index: 1;
-            width: 960px;
-            height: 520px;
-            padding-top: 30px;
-        }
-        
-        #content-wrapper #our-work #project1{
-            z-index: 3;
-            position: absolute;
-            left: 10px;
-            top: 60px;
-        }
-        
-        #content-wrapper #our-work #project2{
-            z-index: 3;
-            position: absolute;
-            left: 250px;
-            top: 60px;
-        }
+#what-we-do .wrapper .anchor2 {
+  margin-left: -150px;
+}
 
-        #content-wrapper #our-work #project3{
-            z-index: 3;
-            position: absolute;
-            left: 490px;
-            top: 60px;
-        }
-        
-        #content-wrapper #our-work #project4{
-            z-index: 3;
-            position: absolute;
-            left: 730px;
-            top: 60px;
-        }
-        
-        #content-wrapper #our-work #project5{
-            z-index: 3;
-            position: absolute;
-            left: 10px;
-            top: 220px;
-        }
-        
-        #content-wrapper #our-work #project6{
-            z-index: 3;
-            position: absolute;
-            left: 250px;
-            top: 220px;
-        }
-        
-        #content-wrapper #our-work #project7{
-            z-index: 3;
-            position: absolute;
-            left: 490px;
-            top: 220px;
-        }
-        
-        #content-wrapper #our-work #project8{
-            z-index: 3;
-            position: absolute;
-            left: 730px;
-            top: 220px;
-        }
-        
-        #content-wrapper #our-work #project9{
-            z-index: 3;
-            position: absolute;
-            left: 10px;
-            top: 380px;
-        }
-        
-        #content-wrapper #our-work #project10{
-            z-index: 3;
-            position: absolute;
-            left: 250px;
-            top: 380px;
-        }
-        
-        #content-wrapper #our-work #project11{
-            z-index: 3;
-            position: absolute;
-            left: 490px;
-            top: 380px;
-        }
-        
-        #content-wrapper #our-work #project12{
-            z-index: 3;
-            position: absolute;
-            left: 730px;
-            top: 380px;
-        }
-        
-    #content-wrapper #contact-us {
-        height: 420px;
-        background-color: #7d2828;
-        position: relative;
-    }
-        #content-wrapper #contact-us #bg_contactus {
-            z-index: 1;
-            width: 960px;
-            height: 360px;
-            position: absolute;
-            top: 30px;
-            left: 0;
-        }
-        
-        #content-wrapper #contact-us #contact_email {
-            z-index: 3;
-            position: absolute;
-            top: 60px;
-            left: 370px;
-        }
-        
-        #content-wrapper #contact-us #contact_phone {
-            z-index: 3;
-            position: absolute;
-            top: 60px;
-            left: 490px;
-        }
-        
-        #content-wrapper #contact-us #mess_content {
-            z-index: 3;
-            height: 170px;
-            width: 460px;
-            position: absolute;
-            top: 190px;
-            left: 170px;
-            border: 0;
-            background-color: #fff0c8;
-            resize: none;
-            font-family: Diavlo LIGHT;
-            font-size: 14px;
-        }
-        
-        #content-wrapper #contact-us #mess_username {
-            z-index: 3;
-            height: 50px;
-            width: 140px;
-            position: absolute;
-            top: 190px;
-            left: 650px;
-            border: 0;
-            background-color: #fff0c8;
-            resize: none;
-            font-family: Diavlo LIGHT;
-            font-size: 14px;
-        }
-        
-        #content-wrapper #contact-us #mess_email {
-            z-index: 3;
-            height: 50px;
-            width: 140px;
-            position: absolute;
-            top: 250px;
-            left: 650px;
-            border: 0;
-            background-color: #fff0c8;
-            resize: none;
-            font-family: Diavlo LIGHT;
-            font-size: 14px;
-        }
-        
-        #content-wrapper #contact-us #button_send {
-            z-index: 3;
-            height: 50px;
-            width: 140px;
-            position: absolute;
-            top: 310px;
-            left: 650px;
-            border: 0;
-            background-color: #fa8732;
-            resize: none;
-            font-family: Diavlo BOLD;
-            font-size: 24px;
-            color: #c8ebff;
-        }
+#what-we-do .wrapper .anchor3 {
+  margin-left: 170px;
+}
 
-    #content-wrapper #transit1 {
-        height: 30px;
-        background-color: #b4502d;
-    }
-    #content-wrapper #transit2 {
-        height: 30px;
-        background-color: #b4462d;
-    }
-    #content-wrapper #transit3 {
-        height: 30px;
-        background-color: #b43c2d;
-    }
-    #content-wrapper #transit4 {
-        height: 30px;
-        background-color: #b4372d;
-    }
-    #content-wrapper #transit5 {
-        height: 30px;
-        background-color: #a52d2d;
-    }
-    #content-wrapper #transit6 {
-        height: 30px;
-        background-color: #962828;
-    }
-    #content-wrapper #transit7 {
-        height: 30px;
-        background-color: #692d2d;
-    }
-    #content-wrapper #transit8 {
-        height: 30px;
-        background-color: #553232;
-    }
+#what-we-do .wrapper .text {
+  font-family: 'Diavlo BOLD';
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffe182;
+  position: absolute;
+  left: 50%;
+  width: 100px;
+  text-align: center;
+}
 
-    #content-wrapper #signature {
-        height: 100px;
-        background-color: #373737;
-        position: relative;
-    }
+.text1 {
+  top: 240px;
+  margin-left: -200px;
+}
+.text2 {
+  top: 170px;
+  margin-left: -50px;
+}
+.text3 {
+  top: 210px;
+  margin-left: 100px;
+}
 
-    #content-wrapper #signature p {
-        position: absolute;
-        text-align: center;
-        color: #999999;
-        font-family: Diavlo LIGHT;
-        font-size: 14px;
-        padding-top: 30px;
-    }
+#what-we-do .wrapper img {
+  padding-top: 80px;
+  display: inline-block;
+}
+
+#what-we-do .bg-orange {
+  height: 185px;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #b45f2d;
+  z-index: 1;
+}
+
+#what-we-do .wrapper p {
+    z-index: 2;
+    font-family: Diavlo BOLD;
+    font-size: 38px;
+    position: absolute;
+    color: #b42d2d;
+    text-align: center;
+    padding-left: 300px;
+}
+
+#who-we-are .wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#content-wrapper #who-we-are {
+    height: 560px;
+    background: #b4412d;
+}
+
+#content-wrapper #who-we-are #bg_whoweare {
+    z-index: 1;
+    width: 960px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.propic {
+  display: inline-block;
+}
+
+#content-wrapper #who-we-are #propic1 {
+    z-index: 3;
+    position: absolute;
+    top: 200px;
+    left: 10px;
+}
+
+#content-wrapper #who-we-are #propic2 {
+  z-index: 3;
+  position: absolute;
+  top: 360px;
+  left: 750px;
+}
+
+#content-wrapper #who-we-are #propic3 {
+  z-index: 3;
+  position: absolute;
+  top: 240px;
+  left: 670px;
+}
+
+ #content-wrapper #who-we-are #propic4 {
+    z-index: 3;
+    position: absolute;
+    top: 410px;
+    left: 90px;
+}
+
+#content-wrapper #who-we-are #propic5 {
+    z-index: 3;
+    position: absolute;
+    top: 300px;
+    left: 250px;
+}
+
+#content-wrapper #who-we-are #propic6 {
+    z-index: 3;
+    position: absolute;
+    top: 180px;
+    left: 350px;
+}
+
+#content-wrapper #who-we-are #propic7 {
+    z-index: 3;
+    position: absolute;
+    top: 400px;
+    left: 420px;
+}
+
+#content-wrapper #who-we-are #propic8 {
+    z-index: 3;
+    position: absolute;
+    top: 260px;
+    left: 510px;
+}
+
+#content-wrapper #who-we-are #propic9 {
+  z-index: 3;
+  position: absolute;
+  top: 200px;
+  left: 830px;
+}
+
+#content-wrapper #who-we-are p {
+    z-index: 2;
+    font-family: Diavlo LIGHT;
+    font-size: 18px;
+    position: absolute;
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+#content-wrapper #our-work {
+  background-color: #b42d2d;
+  position: relative;
+  height: 540px;
+  width: 100%;
+  text-align: center;
+}
+
+#content-wrapper #our-work .inner {
+  background: url('../images/bg1.png');
+  display: inline-block;
+  width: 100%;
+  height: 480px;
+  margin: 30px 0;
+}
+
+#our-work .wrapper {
+  z-index: 1;
+  display: inline-block;
+  max-width: 960px;
+  padding: 40px 0;
+}
+
+#content-wrapper #our-work .project{
+  z-index: 3;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 20px;
+  height: 120px;
+  width: 200px;
+}
+
+#content-wrapper #contact-us {
+  display: inline-block;
+  background: #7d2828;
+  width: 100%;
+  height: 540px;
+}
+
+#content-wrapper #contact-us .inner {
+  background: #7d2828 url('../images/bg2.png');
+  height: 480px;
+  margin: 30px 0;
+}
+
+#content-wrapper #contact-us  .wrapper  {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#content-wrapper #contact-us .contact-menu {
+  padding: 60px;
+  text-align: center;
+}
+
+#content-wrapper #contact-us .contact-menu a {
+  padding: 0 10px;
+}
+
+#content-wrapper  #contact-us  .wrapper  #mess_content {
+  float: left;
+  display: inline-block;
+  width: 600px;
+  padding: 20px;
+  height: 130px;
+  border-radius:10px;
+  background: #fff0c8;
+  font-family: Diavlo LIGHT;
+  font-size: 14px;
+  border: none;
+}
+
+#content-wrapper  #contact-us  .wrapper .col-left {
+  display: inline-block;
+  float: right;
+}
+
+#content-wrapper  #contact-us  .wrapper .col-left input {
+  width: 266px;
+  height: 30px;
+  padding: 10px;
+  border-radius:10px;
+  background: #fff0c8;
+  font-family: Diavlo LIGHT;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+#content-wrapper  #contact-us  .wrapper .col-left #button_send {
+  height: 50px;
+  padding: 0;
+  width: 286px;
+  font-family: Diavlo BOLD;
+  display: inline-block;
+  font-size: 14px;
+  background: #fa8732;
+  border-radius:10px;
+  border: none;
+}
+
+#content-wrapper #transit1 {
+    height: 30px;
+    background-color: #b4502d;
+}
+#content-wrapper #transit2 {
+    height: 30px;
+    background-color: #b4462d;
+}
+#content-wrapper #transit3 {
+    height: 30px;
+    background-color: #b43c2d;
+}
+#content-wrapper #transit4 {
+    height: 30px;
+    background-color: #b4372d;
+}
+#content-wrapper #transit5 {
+    height: 30px;
+    background-color: #a52d2d;
+}
+#content-wrapper #transit6 {
+    height: 30px;
+    background-color: #962828;
+}
+#content-wrapper #transit7 {
+    height: 30px;
+    background-color: #692d2d;
+}
+#content-wrapper #transit8 {
+    height: 30px;
+    background-color: #553232;
+}
+
+#content-wrapper #signature .wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#content-wrapper #signature {
+    height: 100px;
+    background-color: #373737;
+    position: relative;
+}
+
+#content-wrapper #signature p {
+    text-align: center;
+    color: #999999;
+    font-family: Diavlo LIGHT;
+    font-size: 14px;
+    padding-top: 30px;
+}
 
 a#pull {
     display: none;
@@ -448,3 +478,42 @@ a#pull {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
     }
+
+
+.balloonstyle {
+  position:absolute;
+  background: url('../images/bg-bubble.png');
+  top: -500px;
+  left: 0;
+  visibility: hidden;
+  line-height: 18px;
+  z-index: 100;
+  width: 150px;
+  height: 70px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.balloonstyle .name {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: Diavlo MEDIUM;
+}
+
+.balloonstyle .position {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: Diavlo MEDIUM;
+}
+
+
+#arrowhead{
+  z-index: 99;
+  position:absolute;
+  top: -500px;
+  left: 0;
+  visibility: hidden;
+}
+
