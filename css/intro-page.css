@@ -292,7 +292,7 @@ body {
   z-index: 1;
   display: inline-block;
   max-width: 960px;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 #content-wrapper #our-work .project{
@@ -301,7 +301,7 @@ body {
   display: inline-block;
   border-radius: 20px;
   height: 140px;
-  width: 220px;
+  width: 230px;
 }
 
 #content-wrapper #contact-us {
@@ -329,6 +329,7 @@ body {
 
 #content-wrapper #contact-us .contact-menu a {
   padding: 0 10px;
+  text-decoration: none;
 }
 
 #content-wrapper  #contact-us  .wrapper  #mess_content {
