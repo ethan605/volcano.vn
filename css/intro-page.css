@@ -291,7 +291,7 @@ body {
 #our-work .wrapper {
   z-index: 1;
   display: inline-block;
-  max-width: 960px;
+  width: 960px;
   padding: 20px 0;
 }
 
