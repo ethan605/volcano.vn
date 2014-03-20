@@ -1,11 +1,11 @@
 $(document).ready(function() {
-  navigationHeight = $("#header-wrapper").height();
-  offsetTolerance = 40;
-  willSelectNavigationSection = true;
+  var navigationHeight = $("#header-wrapper").height(),
+      offsetTolerance = 40,
+      willSelectNavigationSection = true;
 
   $(".navigation .section").click(function(e) {
     e.preventDefault();
-    sectionName = this.classList[1];
+    var sectionName = this.classList[1];
 
     willSelectNavigationSection = false;
     $("body, html").animate(
@@ -14,21 +14,19 @@ $(document).ready(function() {
       "swing",
       function() {
         willSelectNavigationSection = true;
-      })
+      });
   });
 
   //Detecting user's scroll
   $(window).scroll(function() {
     //Check scroll position
-    scrollPosition  = $(window).scrollTop();
+    var scrollPosition  = $(window).scrollTop();
 
     //Move trough each menu and check its position with scroll position then add selected-nav class
     $(".navigation .section").each(function() {
-      sectionName = this.classList[1];
-      originSectionPosition  = $("#" + sectionName).offset().top;
-      sectionPosition = originSectionPosition - navigationHeight - offsetTolerance;
-
-
+      var sectionName = this.classList[1],
+	  originSectionPosition  = $("#" + sectionName).offset().top,
+	  sectionPosition = originSectionPosition - navigationHeight - offsetTolerance;
 
       if (scrollPosition >= sectionPosition && scrollPosition - 400 < sectionPosition ) {
         console.log(sectionName, scrollPosition, sectionPosition);
@@ -40,8 +38,9 @@ $(document).ready(function() {
 
   var allwhatwedos =[["Audi","Volvo","BMW"], ["Honda","Suzuki","Yamaha"], ["Thongnhat","Giant","Mini"]];
   $( ".anchor" ).click(function() {
-    whatwedos = $(this).data("text").split(';');
-    anchor = $(this).data("anchor")
+    var whatwedos = $(this).data("text").split(';'),
+	anchor = $(this).data("anchor");
+
     $(".magma").fadeOut(200);
     $(".magma"+ anchor).fadeIn(200);
     $(".text").fadeOut(200, function(){
@@ -49,6 +48,7 @@ $(document).ready(function() {
       $(".text2").text(whatwedos[1]);
       $(".text3").text(whatwedos[2]);
     });
+
     $(".text").fadeIn(200);
   });
 })
