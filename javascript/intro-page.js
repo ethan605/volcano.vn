@@ -1,57 +1,62 @@
+//Bypass jshint
+var $ = $ || null;
+
 $(document).ready(function() {
-  var navigationHeight = $("#header-wrapper").height(),
-      offsetTolerance = 40,
-      willSelectNavigationSection = true;
+    var navigationHeight = $("#header-wrapper").height(),
+	offsetTolerance = 40,
+	willSelectNavigationSection = true;
 
-  $(".navigation .section").click(function(e) {
-    e.preventDefault();
-    var sectionName = this.classList[1];
+    $(".navigation .section").click(function(e) {
+	e.preventDefault();
+	var sectionName = this.classList[1];
 
-    willSelectNavigationSection = false;
-    $("body, html").animate(
-      {scrollTop: $("#" + sectionName).offset().top - navigationHeight},
-      500,
-      "swing",
-      function() {
-        willSelectNavigationSection = true;
-      });
-  });
-
-  //Detecting user's scroll
-  $(window).scroll(function() {
-    //Check scroll position
-    var scrollPosition  = $(window).scrollTop();
-
-    //Move trough each menu and check its position with scroll position then add selected-nav class
-    $(".navigation .section").each(function() {
-      var sectionName = this.classList[1],
-	  originSectionPosition  = $("#" + sectionName).offset().top,
-	  sectionPosition = originSectionPosition - navigationHeight - offsetTolerance;
-
-      if (scrollPosition >= sectionPosition && scrollPosition - 400 < sectionPosition ) {
-        console.log(sectionName, scrollPosition, sectionPosition);
-        $(".navigation .section").removeClass("selected-nav");
-        $(".navigation ." + sectionName).addClass("selected-nav");
-      }
-    });
-  });
-
-  var allwhatwedos =[["Audi","Volvo","BMW"], ["Honda","Suzuki","Yamaha"], ["Thongnhat","Giant","Mini"]];
-  $( ".anchor" ).click(function() {
-    var whatwedos = $(this).data("text").split(';'),
-	anchor = $(this).data("anchor");
-
-    $(".magma").fadeOut(200);
-    $(".magma"+ anchor).fadeIn(200);
-    $(".text").fadeOut(200, function(){
-      $(".text1").text(whatwedos[0]);
-      $(".text2").text(whatwedos[1]);
-      $(".text3").text(whatwedos[2]);
+	willSelectNavigationSection = false;
+	$("body, html").animate(
+	    {scrollTop: $("#" + sectionName).offset().top - navigationHeight},
+	    500,
+	    "swing",
+	    function() {
+		willSelectNavigationSection = true;
+	    });
     });
 
-    $(".text").fadeIn(200);
-  });
-})
+    //Detecting user's scroll
+    $(window).scroll(function() {
+	//Check scroll position
+	var scrollPosition  = $(window).scrollTop();
+
+	//Move trough each menu and check its position with scroll position then add selected-nav class
+	$(".navigation .section").each(function() {
+	    var sectionName = this.classList[1],
+		originSectionPosition  = $("#" + sectionName).offset().top,
+		sectionPosition = originSectionPosition - navigationHeight - offsetTolerance;
+
+	    if (scrollPosition >= sectionPosition && scrollPosition - 400 < sectionPosition ) {
+		console.log(sectionName, scrollPosition, sectionPosition);
+		$(".navigation .section").removeClass("selected-nav");
+		$(".navigation ." + sectionName).addClass("selected-nav");
+	    }
+	});
+    });
+
+    $( ".anchor" ).click(function() {
+	var whatwedos = $(this).data("text").split(';'),
+	    anchor = $(this).data("anchor");
+
+	$(".magma").fadeOut(200);
+	$(".magma"+ anchor).fadeIn(200);
+	$(".text").fadeOut(200, function(){
+	    $(".text1").text(whatwedos[0]);
+	    $(".text2").text(whatwedos[1]);
+	    $(".text3").text(whatwedos[2]);
+	});
+
+	$(".text").fadeIn(200);
+
+	//Fix top
+	whatwedos[0].length <= 11 ? $('.text1').css('top', '240px') : $('.text1').css('top', '230px');
+    });
+});
 
 // $(document).ready(function() {
 //   $(function() {
