@@ -32,7 +32,7 @@
         <li class="section who-we-are"><a href="#">WHO<br />WE ARE</a></li><!--WHO WE ARE-->
         <li id="icon"><img src="images/logo 80x80.png"/></li>
         <li class="section our-work"><a href="#">OUR<br />WORK</a></li><!--OUR WORK-->
-        <li class="section contact-us"><a href="#">CONTACT<br />US</a></li><!--CONTACT US-->
+        <li class="section anchor-contact-us"><a href="#">CONTACT<br />US</a></li><!--CONTACT US-->
       </ul>
     </div>
   </div>
@@ -98,10 +98,10 @@
         </div>
       </div><!--End @our-work-->
 
-      <div id="transit5"></div><!--End @transit5-->
-      <div id="transit6"></div><!--End @transit6-->
-
       <div id="contact-us">
+        <div id="anchor-contact-us"></div>
+        <div id="transit5"></div><!--End @transit5-->
+        <div id="transit6"></div><!--End @transit6-->
         <div class="inner">
           <div class="contact-menu">
             <a id="contact_email" href="mailto:<?= $contact_email ?>?Subject=Hello%20again" target="_top">
@@ -114,7 +114,7 @@
           <div class="wrapper">
             <form name="contact-form" action="mail.php" method="post" enctype="multipart/form-data">
               <textarea id="mess_content" name="mess-contact" required="required" maxlength="1000" placeholder="Send us a message here."></textarea>
-              <div class="col-left">
+              <div class="col-right">
                 <input type="text" class="small" required="required"  name="name" id="name" maxlength="50" placeholder="Your name"><br>
                 <input type="text" class="small" required="required"  name="email" id="email" maxlength="50" placeholder="Your email address"><br>
                 <button id="button_send" type="submit"/>SEND</button>
