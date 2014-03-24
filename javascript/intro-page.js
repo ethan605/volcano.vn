@@ -47,15 +47,14 @@ $(document).ready(function() {
 	$(".magma"+ anchor).fadeIn(200);
 	$(".text").fadeOut(200, function(){
 	    $(".text1").text(whatwedos[0]);
+	    //Fix top
+	    whatwedos[0].length <= 11 ? $('.text1').css('top', '240px') : $('.text1').css('top', '230px');
 	    $(".text2").text(whatwedos[1]);
 	    $(".text3").text(whatwedos[2]);
 	});
 
 	$(".text").fadeIn(200);
-
-	//Fix top
-	whatwedos[0].length <= 11 ? $('.text1').css('top', '240px') : $('.text1').css('top', '230px');
-    });
+   });
 });
 
 // $(document).ready(function() {
